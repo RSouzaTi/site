@@ -28,7 +28,7 @@
       <h2>Sobre mim</h2>
       <img src="https://media.licdn.com/dms/image/v2/C4E03AQHLZLV3SpoBLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1608116234895?e=1773878400&v=beta&t=VtDIW6ykbQGCMbIFxc9THndIeeEtgES0Yh04sn8mS2M" alt="Minha foto de perfil" width="150" title="Minha foto de perfil"/>
       <article>
-        <p>Olá! Meu nome é [Seu Nome] e sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, JavaScript e várias bibliotecas e frameworks modernos. Adoro aprender novas tecnologias e estou sempre em busca de desafios emocionantes para aprimorar minhas habilidades.</p>
+        <p>Olá! Meu nome é Ricardo e sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, JavaScript e várias bibliotecas e frameworks modernos. Adoro aprender novas tecnologias e estou sempre em busca de desafios emocionantes para aprimorar minhas habilidades.</p>
     </section>
     <aside>
       <h2>Habilidades</h2>
@@ -50,13 +50,47 @@
         <h3>Projeto 2: Aplicativo de Tarefas</h3>
         <p>Criei um aplicativo de tarefas usando React e Node.js. O aplicativo permite aos usuários criar, editar e excluir tarefas, além de marcar tarefas como concluídas. Ele também possui autenticação de usuário e armazenamento em banco de dados.</p>
       </article>
+    
     </section>
     <footer>
       <p>© 2024 Ricardo. Todos os direitos reservados.</p>
       <section id="Contato">
+       
         <h2>Contato</h2>
-        <p>Você pode entrar em contato comigo através do email: <a href="mailto:ricardo@exemplo.com">ricardo@exemplo.com</a></p>
+        <p>Tem um projeto em mente? Entre em contato: <a href="mailto:ricardo@exemplo.com">ricardo@exemplo.com</a></p>
         <p>Telefone: <a href="telefone">(99) 9999-9999</a></p>
+        
+        
+        <form action="enviar-mensagem" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="Telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
+          <br />
+          <label for="assunto">Assunto:</label>
+
+          <br />
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione um assunto</option>
+            <option value="Orçamento">Orçamento</option>
+            <option value="Dúvida">Dúvida</option>
+            <option value="Outro">Outro</option>
+          </select>
+          <br />
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+          <br />
+         
+          <input type="checkbox" id="inscricao" name="inscricao" value="inscricao" />
+          <label for="inscricao">Desejo receber minha newsletter?</label>
+          <button type="submit">Enviar</button>
+          <br />
+       </form>
+        
     </section>
     </footer>
   </body>

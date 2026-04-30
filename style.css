@@ -242,6 +242,79 @@ h2 {
     transform: translateY(-5px);
 }
 
+/* --- SERVIÇOS --- */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    padding: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* --- ESTATÍSTICAS --- */
+.stats-section {
+    background-color: var(--dark-section);
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item .number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.stat-item .label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* --- FORMULÁRIO --- */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 4px;
+}
+
+.contact-info .info-item {
+    margin-bottom: 25px;
+}
 /* --- SEÇÃO CONTATO/FOOTER (MUITO ESCURA) --- */
 footer#contact {
     background-color: var(--darker-section);

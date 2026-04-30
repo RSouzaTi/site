@@ -14,52 +14,43 @@
             <a href="#sobremim">Sobre</a>
             <a href="#skills">Habilidades</a>
             <a href="#projects">Projetos</a>
+            <a href="#services">Serviços</a>
             <a href="#contact">Contato</a>
         </div>
     </nav>
 
-    <!-- Seção Hero com Imagem de Fundo -->
-    <!-- Seção Hero com Imagem de Fundo -->
-<section id="about" class="section">
-    <div class="container">
-        <div class="intro-grid">
-            <img src="ric.jpeg" alt="Ricardo José" class="profile-img">
-           <div class="intro-text">
-    <h1>Olá, eu sou o <span>Ricardo.</span></h1>
- Desenvolvedor Backend | Especialista em Java & Node.js | Entusiasta Mobile    
-    <!-- O botão agora está dentro de um contêiner de ação para facilitar o alinhamento -->
-    <div class="hero-actions">
-        <a href="#sobremim" class="btn-hero">Saiba Mais</a>
-    </div>
-</div>
-    </div>
-</section>
+    <!-- Seção Hero -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="intro-grid">
+                <img src="ric.jpeg" alt="Ricardo José" class="profile-img">
+                <div class="intro-text">
+                    <h1>Olá, eu sou o <span>Ricardo.</span></h1>
+                    <p>Desenvolvedor Backend | Especialista em Java & Node.js | Entusiasta Mobile</p>
+                    <div class="hero-actions">
+                        <a href="#sobremim" class="btn-hero">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Seção Sobre Mim com o seu texto do GitHub -->
+    <!-- Seção Sobre Mim -->
     <section id="sobremim" class="section">
         <div class="container">
             <div class="intro-text">
                 <h2><span>About Me:</span></h2>
-                
                 <article class="bio">
                     <p><strong>Hi 👋, I'm Ricardo</strong></p>
                     <p><strong>🚀 Desenvolvedor Backend | Especialista em Java & Node.js | Entusiasta Mobile</strong></p>
-                    
                     <p>
                         Com mais de seis anos de experiência como Desenvolvedor Backend, especializei-me no design e na construção de arquiteturas escaláveis e de alta performance. 
                         Minha base sólida em **Java** e **Node.js/Express** me permite desenvolver sistemas capazes de gerenciar grandes volumes de tráfego e dados com eficiência.
                     </p>
-                    
                     <p>
                         Além do desenvolvimento backend, transito com fluidez para o desenvolvimento mobile utilizando **Kotlin**, o que me dá uma visão de 360 graus do ciclo de vida de um produto. 
-                        Tenho proficiência em design de **APIs RESTful**, gerenciamento de bancos de dados e implementação em nuvem (AWS/Azure).
-                    </p>
-
-                    <p>
-                        Acredito que a tecnologia deve ser sustentável e comunicável; por isso, prezo por um código bem estruturado e pela capacidade de traduzir desafios técnicos complexos em soluções claras para todos os envolvidos no projeto.
                     </p>
                 </article>
-                
                 <div class="cta-buttons">
                     <a href="https://github.com/RSouzaTi" target="_blank" class="btn-github">
                         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" width="20">
@@ -77,7 +68,7 @@
             <div class="skills-grid">
                 <div class="skill-card"><h3>Mobile</h3><p>Kotlin, Compose, Java</p></div>
                 <div class="skill-card"><h3>Backend</h3><p>Node.js, Spring Boot</p></div>
-                <div class="skill-card"><h3>Frontend</h3><p>HTML, CSS, JavaScript, React </p></div>
+                <div class="skill-card"><h3>Frontend</h3><p>HTML, CSS, JavaScript, React</p></div>
                 <div class="skill-card"><h3>Database</h3><p>PostgreSQL, MongoDB</p></div>
                 <div class="skill-card"><h3>Cloud</h3><p>AWS, Azure</p></div>
                 <div class="skill-card"><h3>Outros</h3><p>Firebase, SQLite, ESP32</p></div>
@@ -105,71 +96,36 @@
             </div>
         </div>
     </section>
-     <!-- SEÇÃO ESTATÍSTICAS (TEMA ESCURO - COUNTER) -->
+
+    <!-- Estatísticas -->
     <section class="stats-section">
         <div class="container stats-grid">
-            <div class="stat-item">
-                <span class="number">83</span>
-                <span class="label">Projetos</span>
-            </div>
-            <div class="stat-item">
-                <span class="number">28</span>
-                <span class="label">Clientes Satisfeitos</span>
-            </div>
-            <div class="stat-item">
-                <span class="number">2</span> <!-- Atualizado conforme sua conquista recente -->
-                <span class="label">Premiações</span>
-            </div>
-            <div class="stat-item">
-                <span class="number">4200</span>
-                <span class="label">Horas de Voo</span>
-            </div>
+            <div class="stat-item"><span class="number">83</span><span class="label">Projetos</span></div>
+            <div class="stat-item"><span class="number">28</span><span class="label">Clientes</span></div>
+            <div class="stat-item"><span class="number">2</span><span class="label">Premiações</span></div>
+            <div class="stat-item"><span class="number">4200</span><span class="label">Horas de Voo</span></div>
         </div>
     </section>
-<!-- SEÇÃO SERVIÇOS (TEMA CLARO) -->
-    <section id="services" class="section">
+
+    <!-- SEÇÃO SERVIÇOS (TEMA ESCURO ATUALIZADO) -->
+    <section id="services" class="section services-dark">
         <div class="container">
-            <h2 style="text-align: center;">Serviços <span>Como posso te ajudar?</span></h2>
-            <p style="text-align: center; margin-bottom: 50px;">Se você precisa de um site, aplicativo, está no lugar certo!</p>
-            
+            <h2 style="text-align: center; color: var(--secondary-color);">Serviços <span>Como posso te ajudar?</span></h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="icon">🌐</div>
-                    <h3>Sistema Integrado</h3>
-                    <p>Desenvolvimento multiplataforma com sincronia total entre diferentes dispositivos via internet.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">💻</div>
-                    <h3>Aplicação Web</h3>
-                    <p>De landing pages e sites pessoais a lojas virtuais e sistemas complexos para internet.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">📱</div>
-                    <h3>Aplicação Mobile</h3>
-                    <p>Apps nativos ou híbridos para Android e iOS, com publicação completa nas lojas oficiais.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">🖥️</div>
-                    <h3>Aplicação Desktop</h3>
-                    <p>Software exclusivo para Windows, Linux e Mac OS, focado em performance local.</p>
-                </div>
-                <div class="service-card">
-                    <div class="icon">✨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Interfaces modernas e experiências focadas totalmente na jornada e satisfação do usuário.</p>
-                </div>
+                <div class="service-card dark"><div class="icon">🌐</div><h3>Sistema Integrado</h3><p>Desenvolvimento multiplataforma com sincronia total via internet.</p></div>
+                <div class="service-card dark"><div class="icon">💻</div><h3>Aplicação Web</h3><p>Sites comerciais e sistemas complexos para internet.</p></div>
+                <div class="service-card dark"><div class="icon">📱</div><h3>Aplicação Mobile</h3><p>Apps nativos ou híbridos para Android e iOS.</p></div>
+                <div class="service-card dark"><div class="icon">🖥️</div><h3>Aplicação Desktop</h3><p>Software para Windows, Linux e Mac OS.</p></div>
+                <div class="service-card dark"><div class="icon">📋</div><h3>Especialista Jira</h3><p>Gestão de fluxos ágeis e otimização de backlogs.</p></div>
+                <div class="service-card dark"><div class="icon">✨</div><h3>UI/UX Design</h3><p>Experiências focadas na jornada do usuário.</p></div>
             </div>
         </div>
     </section>
 
-   
-
-    <!-- SEÇÃO CONTATO (TEMA ESCURO) -->
+    <!-- Contato e Rodapé Único -->
     <footer id="contact">
         <div class="container">
             <h2>Contato <span>Vamos lá?!</span></h2>
-            <p>Preencha o formulário abaixo para esclarecermos suas dúvidas e dar início ao seu projeto!</p>
-            
             <div class="contact-wrapper">
                 <form class="contact-form">
                     <input type="text" placeholder="Seu Nome" required>
@@ -177,33 +133,17 @@
                     <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
                     <button type="submit" class="btn-hero" style="background: var(--accent-color); color: white; border: none;">Enviar Mensagem</button>
                 </form>
-
                 <div class="contact-info">
-                    <div class="info-item">
-                        <strong>📍 Localização</strong>
-                        <p>Massaranduba, Santa Catarina, Brasil</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>✉️ E-mail</strong>
-                        <p>ricardo.souza.ti@outlook.com</p>
-                    </div>
-                    <div class="info-item">
-                        <strong>📞 WhatsApp</strong>
-                        <p>(+55) 47 99657-0336</p>
+                    <p>📍 Massaranduba, Santa Catarina, Brasil</p>
+                    <p>✉️ ricardo.souza.ti@outlook.com</p>
+                    <p>📞 (+55) 47 99657-0336</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="https://github.com/RSouzaTi" target="_blank">GitHub</a> | 
+                        <a href="https://www.linkedin.com/in/ricardojosedesouza/" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <footer id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <div class="social-links">
-                <a href="https://github.com/RSouzaTi" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/ricardojosedesouza/" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </footer>
-
 </body>
 </html>

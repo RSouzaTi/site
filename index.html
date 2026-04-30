@@ -1,128 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Titulo da Página</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Ricardo</h1>
-      <nav>
-        <ul>
-          <li><a href="#Sobre min">Sobre mim</a></li>
-          <li><a href="#Projetos">Projetos</a></li>
-          <li><a href="#Contato">Contato</a></li>
-          <li><a href="https://google.com.br" target="_blank">Google</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="Sobre min">
-      <h2>Sobre mim</h2>
-      <img src="https://media.licdn.com/dms/image/v2/C4E03AQHLZLV3SpoBLQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1608116234895?e=1773878400&v=beta&t=VtDIW6ykbQGCMbIFxc9THndIeeEtgES0Yh04sn8mS2M" alt="Minha foto de perfil" width="150" title="Minha foto de perfil"/>
-      <article>
-        <p>Olá! Meu nome é Ricardo e sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Tenho experiência em HTML, CSS, JavaScript e várias bibliotecas e frameworks modernos. Adoro aprender novas tecnologias e estou sempre em busca de desafios emocionantes para aprimorar minhas habilidades.</p>
-    </section>
-     <section id="habilidades">
-      <h2>Habilidades e Tecnologias</h2>
-      
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Tecnologias</th>
-            <th>Nível de Proficiência</th>
-            <th>Descrição</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML5</td>
-            <td>Avançado</td>
-            <td>Experiência sólida na criação de estruturas semânticas e acessíveis para websites.</td>
-          </tr>
-          <tr>
-            <td>CSS3</td>
-            <td>Avançado</td>
-            <td>Habilidade em estilizar páginas web com layouts responsivos e animações.</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Avançado</td>
-            <td>Conhecimento profundo em JavaScript para criar interatividade e funcionalidades dinâmicas.</td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td>Intermediário</td>
-            <td>Experiência em desenvolvimento de interfaces de usuário com React, incluindo hooks e gerenciamento de estado.</td>
-          </tr>
-          <tr>
-            <td>Node.js</td>
-            <td>Intermediário</td>
-            <td>Habilidade em criar servidores e APIs RESTful usando Node.js e Express.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <section id="Projetos">
-      <h2>Projetos</h2>
-      <article>
-        <h3>Projeto 1: Portfólio Pessoal</h3>
-        <p>Desenvolvi um portfólio pessoal para mostrar meus projetos e habilidades. O site é responsivo e apresenta uma galeria de projetos, uma seção de contato e um blog onde compartilho minhas experiências de desenvolvimento.</p>
-      </article>
-      <article>
-        <h3>Projeto 2: Aplicativo de Tarefas</h3>
-        <p>Criei um aplicativo de tarefas usando React e Node.js. O aplicativo permite aos usuários criar, editar e excluir tarefas, além de marcar tarefas como concluídas. Ele também possui autenticação de usuário e armazenamento em banco de dados.</p>
-      </article>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo José | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-   
-    <footer>
-      <p>© 2024 Ricardo. Todos os direitos reservados.</p>
-      <section id="Contato">
-       
-        <h2>Contato</h2>
-        <p>Tem um projeto em mente? Entre em contato: <a href="mailto:ricardo@exemplo.com">ricardo@exemplo.com</a></p>
-        <p>Telefone: <a href="telefone">(99) 9999-9999</a></p>
-        
-        
-        <form action="enviar-mensagem" method="post">
-          <label for="nome">Nome: </label>
-          <input type="text" id="nome" name="nome" required /><br />
-          <br />
-          <label for="email">Email: </label>
-          <input type="email" id="email" name="email" required /><br />
-          <br />
-          <label for="Telefone">Telefone: </label>
-          <input type="tel" id="telefone" name="telefone" required /><br />
-          <br />
-          <label for="assunto">Assunto: </label>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#about">Início</a>
+            <a href="#sobremim">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </div>
+    </nav>
 
-          <br />
-          <select id="assunto" name="assunto" required>
-            <option value="">Selecione um assunto</option>
-            <option value="Orçamento">Orçamento</option>
-            <option value="Dúvida">Dúvida</option>
-            <option value="Outro">Outro</option>
-          </select>
-          <br />
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" cols="30" rows="10" required></textarea>
-          <br />
-         
-          <input type="checkbox" id="inscricao" name="inscricao" value="inscricao" />
-          <label for="inscricao">Desejo receber minha newsletter? Fique por dentro das novidades!</label>
-          <button type="submit">Enviar</button>
-          <br />
-       </form>
-        
+    <!-- Seção Hero com Imagem de Fundo -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="intro-grid">
+                <img src="dev.jpg" alt="Ricardo José" class="profile-img">
+                <div class="intro-text">
+                    <h1>Olá, eu sou o <span>Ricardo.</span></h1>
+                    <p>Desenvolvedor Backend | Especialista em Java & Node.js | Entusiasta Mobile</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Seção Sobre Mim com o seu texto do GitHub -->
+    <section id="sobremim" class="section">
+        <div class="container">
+            <div class="intro-text">
+                <h2><span>About Me:</span></h2>
+                
+                <article class="bio">
+                    <p><strong>Hi 👋, I'm Ricardo</strong></p>
+                    <p><strong>🚀 Desenvolvedor Backend | Especialista em Java & Node.js | Entusiasta Mobile</strong></p>
+                    
+                    <p>
+                        Com mais de seis anos de experiência como Desenvolvedor Backend, especializei-me no design e na construção de arquiteturas escaláveis e de alta performance. 
+                        Minha base sólida em **Java** e **Node.js/Express** me permite desenvolver sistemas capazes de gerenciar grandes volumes de tráfego e dados com eficiência.
+                    </p>
+                    
+                    <p>
+                        Além do desenvolvimento backend, transito com fluidez para o desenvolvimento mobile utilizando **Kotlin**, o que me dá uma visão de 360 graus do ciclo de vida de um produto. 
+                        Tenho proficiência em design de **APIs RESTful**, gerenciamento de bancos de dados e implementação em nuvem (AWS/Azure).
+                    </p>
+
+                    <p>
+                        Acredito que a tecnologia deve ser sustentável e comunicável; por isso, prezo por um código bem estruturado e pela capacidade de traduzir desafios técnicos complexos em soluções claras para todos os envolvidos no projeto.
+                    </p>
+                </article>
+                
+                <div class="cta-buttons">
+                    <a href="https://github.com/RSouzaTi" target="_blank" class="btn-github">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" width="20">
+                        Meu Perfil no GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><h3>Mobile</h3><p>Kotlin, Compose, Java</p></div>
+                <div class="skill-card"><h3>Backend</h3><p>Node.js, Spring Boot</p></div>
+                <div class="skill-card"><h3>Outros</h3><p>Firebase, SQLite, ESP32</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects-list">
+                <article class="project-item">
+                    <div class="project-info">
+                        <h3>Vitem</h3>
+                        <p>Modernização de interface de XML para Jetpack Compose.</p>
+                    </div>
+                </article>
+                <article class="project-item">
+                    <div class="project-info">
+                        <h3>IBK Check</h3>
+                        <p>Sistema de Help Desk para manutenção industrial de caldeiras.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Email: ricardo.souza.ti@outlook.com</p>
+            <div class="social-links">
+                <a href="https://github.com/RSouzaTi" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/ricardojosedesouza/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
-  </body>
+
+</body>
 </html>
